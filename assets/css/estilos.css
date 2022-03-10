@@ -302,14 +302,17 @@ ul li a{
     font-weight: 400;
 }
 
-section .contenedor{
-    width: 80%;
+section .body-main__contenedor{
     height: auto;
     position: relative;
     background: #ffffff;
     top: -8em;
     border-radius: 10px;
-    padding: 6em 7em;
+    padding: 6em 5em;
+}
+
+.container{
+    width: 80%;
 }
 
 .separador{
@@ -333,4 +336,160 @@ section .contenedor{
 
 .body-main__img img{
     width: 100%;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 992px){
+    .container{
+        width: 100%;
+    }
+    
+    section .body-main__contenedor{
+        position: initial;
+        border-radius: 0;
+    }
+}
+
+@media (max-width: 576px) {  
+    section .body-main__contenedor{
+        position: initial;
+        width: 100%;
+        border-radius: 0;
+        padding: 4em 1em 1em;
+    }
+
+    .body-main__titulo h2{
+        font-size: 1.6rem;
+        margin: auto;
+    }
+
+    .separador{
+        margin: 2em 0;
+    }
+
+    .body-main__texto p{
+        font-size: 1.4rem;
+        margin: auto;
+        line-height: normal;
+        font-weight: 100;
+        color: var(--color-text);
+    }
+
+    .body-main__img{
+        margin-top: 1em;
+    }
+}
+
+/*========== seccion servicios ==========*/
+
+.servicios-main{
+    display: flex;
+    justify-content: center;
+}
+
+.servicios-main__contenedor{
+    background: #ffffff;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 6em 5em;
+}
+
+.servicios-main__emprende{
+    width: 46%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    padding: 4em 2em;
+    border-radius: 10px;
+}
+
+.servicios-main__emprende:hover{
+    background: var(--color-primary);
+    color: #ffffff;
+    transition: .2s ease-in-out;
+}
+
+.servicios-main__emprende:hover h3,
+.servicios-main__emprende:hover p{
+    color: #ffffff;
+    transition: .2s ease-in-out;
+}
+
+.servicios-main__emprende h3{
+    font-family: var(--title-font);
+    font-weight: lighter;
+    font-size: var(--h1-font-size);
+    color: var(--color-secondary);
+}
+
+.servicios-main__emprende-relleno{
+    width: 140px;
+    height: 140px;
+    background: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.servicios-main__emprende p{
+    text-align: center;
+    font-family: var(--title-font);
+    font-size: 1.4rem;
+    color: var(--color-text);
+    font-weight: 100;
+}
+
+.servicios-main__emprende img{
+    width: 60%;
+}
+
+@media screen and (max-width: 992px){
+    .servicios-main{
+        margin-top: 1em;
+    }
+
+    .servicios-main__contenedor{
+        border-radius: 0;
+    }
+}
+
+@media (max-width: 888px) { 
+    .container{
+        width: 100%;
+    }
+    
+    .servicios-main{
+        margin-top: 1em;
+    }
+
+    .servicios-main__contenedor{
+        border-radius: 0;
+        padding: 1em;
+        justify-content: center;
+    }
+
+    .servicios-main__emprende{
+        width: 85%;
+        height: auto;
+    }
+
+    .servicios-main__emprende h3{
+        text-align: center;
+        font-size: 1.7rem;
+    }
+
+    .servicios-main__emprende p{
+        font-size: 1.28rem;
+    }
+}
+
+@media (max-width: 576px) {  
+    .servicios-main__emprende{
+        width: 100%;
+    }
 }
