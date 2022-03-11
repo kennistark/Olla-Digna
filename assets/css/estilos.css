@@ -18,6 +18,7 @@
     --h2-font-size: 2.3rem;
     --h3-font-size: 1.5rem;
     --text-font-size: 1.7rem;
+    --hue: 240;
 }
 
 /*========== Base ==========*/
@@ -508,16 +509,22 @@ section .body-main__contenedor{
     background: #ffffff;
     margin-top: 2em;
     border-radius: 10px;
+    display: flex;
 }
 
 .medios-main__medio-videos{
     height: auto;
-    padding: 6em 0;
+    padding: 2em 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .medios-main__medio-img{
     width: 80%;
     margin: auto;
+    display: flex;
+    justify-content: center;
 }
 
 .medios-main__medio-texto{
@@ -597,14 +604,141 @@ section .body-main__contenedor{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 1210px;
-    padding: 5em 2em;
+    height: auto;
+    padding: 3em 3em;
     width: 50%;
 }
 
 .medios-main__twitter .twitter-timeline{
     width: 100% !important;
     height: 100% !important;
-
 }
 
+@media (max-width: 1309px) {  
+    .medios-main__medio-btn-youtube{
+        font-size: 1.1em;
+    }
+
+    .medios-main__medio-texto h4{
+        font-size: 2.3em;
+    }
+}
+
+@media (max-width: 992px) {  
+    .medios-main__contenedor{
+        flex-direction: column;
+    }
+
+    .medios-main__medio, .medios-main__twitter{
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .medios-main__medio-img img{
+        max-width: 60%;
+    }
+
+    .medios-main__twitter{
+        height: 900px;
+    }
+}
+
+@media (max-width: 576px) {  
+    .medios-main__medio-btn-youtube{
+        font-size: 1em;
+    }
+
+    .medios-main__medio-texto p{
+        font-size: 1.4rem;
+    }
+
+    .medios-main__medio-img img{
+        max-width: 100%;
+    }
+}
+
+/*========== boton whatsapp ==========*/
+
+.float{
+	position:fixed;
+	width: 90px;
+	height: 90px;
+	bottom: 40px;
+	right: 40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+	font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+	z-index:100;
+	transition: .2s ease-in-out;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.float:hover {
+	text-decoration: none;
+	color: #25d366;
+    background-color:#fff;
+    transition: .2s ease-in-out;
+}
+
+.my-float{
+	margin-top:16px;
+}
+
+.what{
+    font-size: 1.5em;
+}
+
+/*========== footer ==========*/
+
+.footer-container{
+    width: 100%;
+    background: #cbc7c7;
+    padding: 2em 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3em;
+}
+
+.footer-container ul{
+    width: 20%;
+}
+
+.footer-container ul li i{
+    position: relative;
+    right: 30px;
+    font-size: 2.5em;
+    color: var(--color-text);
+}
+
+.footer-container ul li i:hover{
+    transition: .2s ease-in-out;
+    font-size: 2.5em;
+    color: var(--color-secondary);
+}
+
+@media (max-width: 992px) {  
+    .footer-container ul{
+        width: 60%;
+    }
+}
+
+@media (max-width: 576px) {  
+    .footer-container ul{
+        width: 50%;
+    }
+}
+
+@media (max-width: 379px) {  
+    .footer-container ul{
+        width: 70%;
+    }
+
+    .float{
+        bottom: 100px;
+    }
+}
