@@ -303,6 +303,20 @@ ul li a{
     }
 }
 
+@media only screen and (min-width:308px) and (max-width:736px){
+    .banner__logo {
+        margin-bottom: 0.5em;
+    }
+
+    .banner__logo img {
+        width: 100px;
+    }
+
+    .banner__info h1 {
+        font-size: 1.2em;
+    }
+}
+
 /* ----------------------------------------------------------------- */
 @media (max-width: 576px) {  
     .banner{
@@ -322,6 +336,8 @@ ul li a{
         width: 100%;
     }
 }
+
+
 
 /*========== seccion bienvenida ==========*/
 .body-main{
