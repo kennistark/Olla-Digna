@@ -86,6 +86,7 @@ button{
     font-family: var(--title-font);
     font-size: var(--sub-tittle-size);
     color: #fff;
+    font-weight: lighter;
 }
 
 .banner-info__donar{
@@ -493,3 +494,117 @@ section .body-main__contenedor{
         width: 100%;
     }
 }
+
+/*========== seccion medios ==========*/
+.medios-main__contenedor{
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.medios-main__medio, .medios-main__twitter{
+    width: 50%;
+    background: #ffffff;
+    margin-top: 2em;
+    border-radius: 10px;
+}
+
+.medios-main__medio-videos{
+    height: auto;
+    padding: 6em 0;
+}
+
+.medios-main__medio-img{
+    width: 80%;
+    margin: auto;
+}
+
+.medios-main__medio-texto{
+    width: 80%;
+    margin: auto;
+}
+
+.medios-main__medio-texto h4{
+    text-align: center;
+    font-size: var(--title-font-size);
+    font-family: var(--title-font);
+    color: var(--color-primary);
+    font-weight: 300;
+    margin: .5em 0;
+}
+
+.medios-main__medio-texto p{
+    text-align: center;
+    font-family: var(--title-font);
+    font-size: var(--text-font-size);
+    color: var(--color-text);
+    font-weight: 300;
+}
+
+.medios-main__medio-btn{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    margin-top: 4em;
+}
+
+.medios-main__medio-btn-youtube{
+    background: #c00;
+    color: #ffffff;
+    padding: 1em 3em;
+    border-radius: 10px;
+    font-family: var(--title-font);
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+}
+
+.medios-main__medio-btn-youtube:hover{
+    background: #af0808;
+    transition: .2s ease-in-out;
+}
+
+.medios-main__medio-btn-novedades{
+    border: 2px var(--color-secondary) solid;
+    color: var(--color-secondary);
+    padding: 1em 3em;
+    border-radius: 10px;
+    font-family: var(--title-font);
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+}
+
+.medios-main__medio-btn-novedades:hover{
+    background: var(--color-secondary);
+    color: #ffffff;
+    transition: .2s ease-in-out;
+}
+
+.medios-main__medio-btn-youtube a{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+.yt{
+    font-size: 1.5em;
+    margin: 0 .2em;
+}
+
+.medios-main__twitter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1210px;
+    padding: 5em 2em;
+    width: 50%;
+}
+
+.medios-main__twitter .twitter-timeline{
+    width: 100% !important;
+    height: 100% !important;
+
+}
+
