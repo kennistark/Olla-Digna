@@ -697,15 +697,24 @@ section .body-main__contenedor{
 .footer-container{
     width: 100%;
     background: #cbc7c7;
-    padding: 2em 0;
+    padding: 2em 0 0;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     margin-top: 3em;
 }
 
 .footer-container ul{
     width: 20%;
+}
+
+.footer-container p{
+    font-family: var(--title-font);
+    font-size: 1.3em;
+    color: var(--color-text);
+    font-weight: 300;
+    margin: 1em 1em .8em;
 }
 
 .footer-container ul li i{
@@ -730,6 +739,21 @@ section .body-main__contenedor{
 @media (max-width: 576px) {  
     .footer-container ul{
         width: 50%;
+    }
+
+    .float{
+        width: 55px;
+        height: 55px;
+    }
+
+    .float i{
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 492px) {  
+    .footer-container p{
+        font-size: .9em;
     }
 }
 
