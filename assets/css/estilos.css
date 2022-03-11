@@ -189,7 +189,7 @@ ul li a{
     width: 140px;
 }
 
-@media screen and (max-width: 1280px){
+@media screen and (max-width: 1480px){
     header{
         padding: 0;
     }
@@ -203,13 +203,17 @@ ul li a{
     }
     
     .banner {
-        height: 72vh;
+        height: 100vh;
         background-attachment: scroll;
         padding: 8em 0 4em 0;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
+    }
+
+    .body-main .body-main__contenedor{
+        top: -4em;
     }
 
     .banner__info h1{
@@ -422,6 +426,7 @@ section .body-main__contenedor{
 }
 
 .servicios-main__emprende h3{
+    text-align: center;
     font-family: var(--title-font);
     font-weight: lighter;
     font-size: var(--h1-font-size);
