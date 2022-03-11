@@ -250,6 +250,10 @@ ul li a{
     }
 
     .banner__logo{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         margin-bottom: 2em;
     }
 
@@ -309,7 +313,7 @@ ul li a{
     }
 
     .banner__logo img {
-        width: 100px;
+        width: 25%;
     }
 
     .banner__info h1 {
