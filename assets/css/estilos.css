@@ -433,7 +433,7 @@ ul li a{
 .body-main__titulo h2{
     text-align: center;
     color: var(--color-primary);
-    font-size: var(--h2-font-size);
+    font-size: 1.9rem;
     font-family: var(
     --title-font);
     font-weight: 400;
@@ -449,7 +449,7 @@ section .body-main__contenedor{
 }
 
 .container{
-    width: 80%;
+    width: 70%;
 }
 
 .separador{
@@ -459,8 +459,8 @@ section .body-main__contenedor{
 
 .body-main__texto p{
     font-family: var(--title-font);
-    font-size: 1.7rem;
-    line-height: 1.5;
+    font-size: 1.4rem;
+    line-height: 1.7;
     text-align: justify;
     color: var(--color-text);
     font-weight: 200;
