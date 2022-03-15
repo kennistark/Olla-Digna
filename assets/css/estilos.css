@@ -90,6 +90,14 @@ button{
     font-weight: lighter;
 }
 
+.show {
+    display: flex !important;
+  }
+
+  .hamburger{
+    display: none;
+  }
+
 .banner-info__donar{
     display: flex;
     justify-content: center;
@@ -241,7 +249,80 @@ ul li a{
 }
 
 @media screen and (max-width: 992px){
-    header{
+     header{
+        top: 10px;
+        background: none;
+        width: 80%;
+        margin: auto;
+    }
+
+    nav{
+        width: 100%;
+    } 
+
+    nav ul .logo{
+        order: 1;
+    }
+
+    .menu nav ul{
+        display: none;
+        background: var(--color-primary);
+        position: absolute;
+        top: 4.5em;
+        border-radius: 10px;
+        height: 400px;
+        align-items: center;
+        flex-direction: column;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        transition: all .3s ease-in-out;
+    }
+
+    .menu nav ul li{
+        left: 0;
+    }
+
+    .menu .hamburger{
+        height: 64px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: var(--color-primary);
+        border-radius: 10px;
+        width: 100%;
+        box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+    }
+
+    .menu .hamburger i{
+        align-self: flex-start;
+        margin-left: 2em;
+        font-size: 1.5em;
+        filter: invert(1);
+        cursor: pointer;
+    }
+
+    .menu nav ul li{
+        margin-left: 0;
+        margin-top: 1em;
+        width: 100%;
+        font-family: var(--title-font);
+    }
+
+    .menu nav ul li a{
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        padding: 2em 0;
+        transition: all .2s ease-in-out;
+    }
+
+    .menu nav ul li a:hover{
+        background: #fff;
+        color: var(--color-secondary);
+        font-weight: 600;
+    }
+
+    .logo img{
         display: none;
     }
 
@@ -312,6 +393,9 @@ ul li a{
         margin-bottom: 0.5em;
     }
 
+    /* .banner__logo img {
+        width: 25%;
+    } */
 
     .banner__info h1 {
         font-size: 1.2em;
